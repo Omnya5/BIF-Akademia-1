@@ -1,0 +1,42 @@
+<?xml version="1.0"?><!DOCTYPE NmLoader SYSTEM "standardX26.dtd">
+
+<NmLoader>
+   <csvPreferenceCategory handler="wt.preference.LoadPreference.createPreferenceCategory">
+      <csvname>CUSTOM_PREFERENCE</csvname>
+      <csvparentName>PART_MANAGEMENT</csvparentName>
+      <csvdisplayName>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_CATEGORY</csvdisplayName>
+      <csvdescription/>
+   </csvPreferenceCategory>
+
+   <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+      <csvname>FIRST_CUSTOM_PREFERENCE</csvname>
+      <csvvisibility>CONTAINER</csvvisibility>
+      <csvcategoryName>CUSTOM_PREFERENCE</csvcategoryName>
+      <csvdisplayName>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_PREF_NAME</csvdisplayName>
+      <csvdescription>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_PREF_DESC</csvdescription>
+      <csvlongDescription>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_PREF_DESC</csvlongDescription>
+      <csvdefaultValue>false</csvdefaultValue>
+      <csvhandler>com.ptc.windchill.enterprise.preference.handler.BooleanPreferenceValueHandler:</csvhandler>
+   </csvPreferenceDefinition>
+
+   <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+      <csvname>FIRST_CUSTOM_PREFERENCE</csvname>
+      <csvclientName>WINDCHILL</csvclientName>
+   </csvLinkPreferenceClientDefinition>
+
+   <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+      <csvname>SECOND_CUSTOM_PREFERENCE</csvname>
+      <csvvisibility>CONTAINER</csvvisibility>
+      <csvcategoryName>CUSTOM_PREFERENCE</csvcategoryName>
+      <csvdisplayName>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_PREF_SECOND_NAME</csvdisplayName>
+      <csvdescription>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_PREF_SECOND_DESC</csvdescription>
+      <csvlongDescription>com.ttpsc.remote.bundle.PreferenceRB:CUSTOMIZATION_PREF_SECOND_DESC</csvlongDescription>
+      <csvdefaultValue>Cześć</csvdefaultValue>
+      <csvhandler>com.ptc.windchill.enterprise.preference.handler.StringPreferenceValueHandler</csvhandler>
+   </csvPreferenceDefinition>
+
+   <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+      <csvname>SECOND_CUSTOM_PREFERENCE</csvname>
+      <csvclientName>WINDCHILL</csvclientName>
+   </csvLinkPreferenceClientDefinition>
+</NmLoader>

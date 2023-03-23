@@ -1,0 +1,27 @@
+<?xml version="1.0"?><!DOCTYPE NmLoader SYSTEM "standardX26.dtd">
+
+<NmLoader>
+   <csvPreferenceCategory handler="wt.preference.LoadPreference.createPreferenceCategory">
+      <csvname>CUSTOM_DOC_CATEGORY</csvname>
+      <csvparentName>PART_MANAGEMENT</csvparentName>
+      <csvdisplayName>com.ttpsc.remote.bundle.CustomPreferenceRB:CUSTOMIZATION_CATEGORY</csvdisplayName>
+      <csvdescription/>
+   </csvPreferenceCategory>
+
+   <csvPreferenceDefinition handler="wt.preference.LoadPreference.createPreferenceDefinition">
+      <csvname>CUSTOM_DOCUMENT_NAME</csvname>
+      <csvvisibility>CONTAINER</csvvisibility>
+      <csvcategoryName>CUSTOM_DOC_CATEGORY</csvcategoryName>
+      <csvdisplayName>com.ttpsc.remote.bundle.CustomPreferenceRB:CUSTOMIZATION_PREF_NAME</csvdisplayName>
+      <csvdescription>com.ttpsc.remote.bundle.CustomPreferenceRB:CUSTOMIZATION_PREF_DESC</csvdescription>
+      <csvlongDescription>com.ttpsc.remote.bundle.CustomPreferenceRB:CUSTOMIZATION_PREF_DESC</csvlongDescription>
+      <csvdefaultValue>this_is_my_document_name</csvdefaultValue>
+      <csvhandler>com.ptc.windchill.enterprise.preference.handler.StringPreferenceValueHandler</csvhandler>
+   </csvPreferenceDefinition>
+
+   <csvLinkPreferenceClientDefinition handler="wt.preference.LoadPreference.setClientDefinitionLink">
+      <csvname>CUSTOM_DOCUMENT_NAME</csvname>
+      <csvclientName>WINDCHILL</csvclientName>
+   </csvLinkPreferenceClientDefinition>
+
+</NmLoader>
